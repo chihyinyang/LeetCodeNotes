@@ -1,5 +1,5 @@
 
-### 🔗Question link [https://leetcode.com/problems/two-sum/description/](https://leetcode.com/problems/two-sum/description/)
+# [2 sum](https://leetcode.com/problems/two-sum/description/)
 
 ### 📕Content
 
@@ -13,14 +13,11 @@ You can return the answer in any order.
 
 ```
 func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
-		// 先把nums從小到大排序
     let sorted = nums.sorted()
-		// 從小的開始for-in
     for (aIndex, number) in sorted.enumerated() {
         var bIndex = aIndex
-        // 用while迴圈，加移動b的位子
-				// (確保加1後的b index是存在的) && (兩個數字相加 小於目標數字)
-        while (sorted.indices.contains(bIndex)) && (number + sorted[bIndex] < target) {
+        
+        while sorted.indices.contains(bIndex) && number + sorted[bIndex] < target {
             bIndex += 1
         }
         
