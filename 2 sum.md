@@ -36,4 +36,4 @@ func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
 }
 ```
 
-![image](https://github.com/chihyinyang/LeetCodeNotes/blob/main/Sources/img-2sum/Group%2018.png))
+![image](https://github.com/chihyinyang/LeetCodeNotes/blob/main/Sources/img-2sum/example.png)
