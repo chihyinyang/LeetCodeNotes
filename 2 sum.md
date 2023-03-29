@@ -40,3 +40,4 @@ func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
 
 1. sorted the array (this is important)
 2. first number plus second one, check if is bigger than target. If it is bigger, then we can skip this round, start next round, which is second number plus the third one, vice versa.
+3. get index using both `firstIndex` and `lastIndex`, because once we get the number we want, we have to get the order from the original array, and prevent from the number is duplicated, so we get the firstIndex and lastIndex.
