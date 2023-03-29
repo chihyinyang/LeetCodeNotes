@@ -36,10 +36,7 @@ func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
 }
 ```
 
-![image](https://github.com/chihyinyang/LeetCodeNotes/blob/main/Sources/img-2sum/example.png)
-
-hello $${\color{red}Red}$$ whattt
-
 > __Note__
 
-> __Warning__
+1. sorted the array (this is important)
+2. first number plus second one, check if is bigger than target. If it is bigger, then we can skip this round, start next round, which is second number plus the third one, vice versa.
