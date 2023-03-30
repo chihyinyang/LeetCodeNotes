@@ -23,21 +23,30 @@ func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
            number + sorted[bIndex] == target {
             let a = number
             let b = sorted[bIndex]
-            let aIndexInNums = nums.firstIndex{ $0 == a }
-            let bIndexInNums = nums.lastIndex{ $0 == b }
+            var aIndexInNums: Int? = nil
+            var bIndexInNums: Int? = nil
             
-            if let aIndexInNums = aIndexInNums,
-               let bIndexInNums = bIndexInNums {
-                return [aIndexInNums, bIndexInNums]
+            for (numIndex, number) in nums.enumerated() {
+                if aIndexInNums == nil,
+                   number == a {
+                    aIndexInNums = numIndex
+                    
+                } else if bIndexInNums == nil,
+                          number == b {
+                    bIndexInNums = numIndex
+                }
+                
+                if let aIndexInNums = aIndexInNums,
+                   let bIndexInNums = bIndexInNums {
+                    return [aIndexInNums, bIndexInNums]
+                }
             }
         }
     }
     return []
 }
 ```
-
-> __Note__
+Runtime: 67ms (beats 39.53%) | Memory: 14.3 MB (beats 74.29%)
 
 1. sorted the array (this is important)
 2. first number plus second one, check if is bigger than target. If it is bigger, then we can skip this round, start next round, which is second number plus the third one, vice versa.
-3. get index using both `firstIndex` and `lastIndex`, because once we get the number we want, we have to get the order from the original array, and prevent from the number is duplicated, so we get the firstIndex and lastIndex.
