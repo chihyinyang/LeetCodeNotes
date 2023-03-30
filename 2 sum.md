@@ -49,4 +49,4 @@ func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
 Runtime: 67ms (beats 39.53%) | Memory: 14.3 MB (beats 74.29%)
 
 1. sorted the array (this is important)
-2. first number plus second one, check if is bigger than target. If it is bigger, then we can skip this round, start next round, which is second number plus the third one, vice versa.
+2. then, first number plus second one, check if is bigger than target. If it is bigger, then we can skip this round, start next round, which is second number plus the third one, vice versa.
