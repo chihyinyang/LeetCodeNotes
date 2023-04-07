@@ -34,5 +34,5 @@ func removeDuplicates(_ nums: inout [Int]) -> Int {
 ```
 Runtime: 54ms (beats 45.45%) | Memory: 14.6 MB (beats 95.57%)
 
-1. Given that the array is sorted in ascendind, it is possible to optimize the time complexity of the algorithm by efficiently skipping duplicate elements.
+1. Given that the array is sorted in ascending, it is possible to optimize the time complexity of the algorithm by efficiently skipping duplicate elements.
 
