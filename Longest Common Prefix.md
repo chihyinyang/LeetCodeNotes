@@ -1,9 +1,9 @@
 
-# [Add Two Number](https://leetcode.com/problems/add-two-numbers/description/)
+# [Longest Common Prefix]([https://leetcode.com/problems/add-two-numbers/description/](https://leetcode.com/problems/longest-common-prefix/description/))
 
-You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
+Write a function to find the longest common prefix string amongst an array of strings.
 
-You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+If there is no common prefix, return an empty string "".
 
 ### 📌 My Solution
 
