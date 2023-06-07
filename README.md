@@ -8,3 +8,4 @@
 6. 💚 [Longest Common Prefix](https://github.com/chihyinyang/LeetCodeNotes/blob/main/Longest%20Common%20Prefix.md)
 7. 💚 [Palindrome Number](https://github.com/chihyinyang/LeetCodeNotes/blob/main/Palindrome%20Number.md)
 8. 💚 [Roman to Integer](https://github.com/chihyinyang/LeetCodeNotes/blob/main/Roman%20to%20Integer.md)
+9. [Contains Duplicate]()
